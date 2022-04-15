@@ -10,6 +10,7 @@ django-cors-headers = "*"
 pillow = "*"
 numpy = "*"
 tensorflow-cpu = "*"
+gunicorn = "==19.9.0"
 
 [dev-packages]
 
