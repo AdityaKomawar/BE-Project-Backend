@@ -164,5 +164,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN='sl.BFwapk9dkpMTosRqhhkHgnBTj6Kg8VUmL--9Ffg29yKFVa4gGlJxs_awNpfgINRrOAigzVKuFhvU3gqHnFz9EhERWriwsnVVjYVOpsnkdwo7EUwNaVndIMpi29A-Zwopr_DWEEY'
+DROPBOX_OAUTH2_TOKEN='sl.BFwgN3p4cSuHpd-MQiB0tWOcS7Jm8pB5zXiEXdw2J3LUEOrenHhedxknEqzNSIIVRu0bnWF2l5ygiqfoDtOiNfmhvnvHTWvmRmY_SxZzG-PffMAykqIHt9J3-rC8-OMjsuHGvag'
 DROPBOX_ROOT_PATH = '/media/'
