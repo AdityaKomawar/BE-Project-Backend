@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 MODELS = os.path.join(BASE_DIR, 'apis/models')
 # MODELS = os.path.join(BASE_DIR, 'apis')
 
@@ -59,6 +58,7 @@ INSTALLED_APPS = [
     # 3rd party
     'rest_framework',
     'corsheaders',
+    'storages',
 
     # Local
     'apis.apps.ApisConfig',
@@ -161,3 +161,8 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+
+
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+DROPBOX_OAUTH2_TOKEN='sl.BFwapk9dkpMTosRqhhkHgnBTj6Kg8VUmL--9Ffg29yKFVa4gGlJxs_awNpfgINRrOAigzVKuFhvU3gqHnFz9EhERWriwsnVVjYVOpsnkdwo7EUwNaVndIMpi29A-Zwopr_DWEEY'
+DROPBOX_ROOT_PATH = '/media/'

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f52dde4ba1873ef99b01fd2c04a7c46fab908d218c5ee16b9e5d24655f2e5ad3"
+            "sha256": "d2c16397447e1036d48004176d6f196e4c38fa7e5136a5f3358c2d755de82359"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -70,6 +70,17 @@
             "index": "pypi",
             "version": "==3.11.0"
         },
+        "django-storages": {
+            "extras": [
+                "dropbox"
+            ],
+            "hashes": [
+                "sha256:204a99f218b747c46edbfeeb1310d357f83f90fa6a6024d8d0a3f422570cee84",
+                "sha256:a475edb2f0f04c4f7e548919a751ecd50117270833956ed5bd585c0575d2a5e7"
+            ],
+            "index": "pypi",
+            "version": "==1.12.3"
+        },
         "djangorestframework": {
             "hashes": [
                 "sha256:0c33407ce23acc68eca2a6e46424b008c9c02eceb8cf18581921d0092bc1f2ee",
@@ -77,6 +88,14 @@
             ],
             "index": "pypi",
             "version": "==3.13.1"
+        },
+        "dropbox": {
+            "hashes": [
+                "sha256:09b59f962ac28ce5b80d5f870c00c5fe7a637c4ac8d095c7c72fdab1e07376fc",
+                "sha256:2200ad5f42e00ae00d45db4a050fa199fe701ddc979fd1396d2c3e8912476c60",
+                "sha256:bf81a822e662bd337f4cd33fe39580c0b6ee4781d018ef1b31dcef2f402986f2"
+            ],
+            "version": "==11.29.0"
         },
         "flatbuffers": {
             "hashes": [
@@ -333,6 +352,13 @@
             "index": "pypi",
             "version": "==9.1.0"
         },
+        "ply": {
+            "hashes": [
+                "sha256:00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3",
+                "sha256:096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce"
+            ],
+            "version": "==3.11"
+        },
         "protobuf": {
             "hashes": [
                 "sha256:001c2160c03b6349c04de39cf1a58e342750da3632f6978a1634a3dcca1ec10e",
@@ -445,6 +471,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==0.4.2"
+        },
+        "stone": {
+            "hashes": [
+                "sha256:4ef0397512f609757975f7ec09b35639d72ba7e3e17ce4ddf399578346b4cb50",
+                "sha256:cd2f7f9056fc39b16c8fd46a26971dc5ccd30b5c2c246566cd2c0dd27ff96609",
+                "sha256:e15866fad249c11a963cce3bdbed37758f2e88c8ff4898616bc0caeb1e216047"
+            ],
+            "version": "==3.3.1"
         },
         "tensorboard": {
             "hashes": [

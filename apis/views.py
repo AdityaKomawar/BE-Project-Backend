@@ -21,7 +21,7 @@ import os
 from django.conf import settings
 from django.core.files.storage import default_storage
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from tensorflow.keras.applications.imagenet_utils import decode_predictions
+# from tensorflow.keras.applications.imagenet_utils import decode_predictions
 
 # Create your views here.
 

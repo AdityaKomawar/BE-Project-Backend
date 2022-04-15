@@ -11,6 +11,7 @@ pillow = "*"
 numpy = "*"
 tensorflow-cpu = "*"
 gunicorn = "==19.9.0"
+django-storages = {extras = ["dropbox"], version = "*"}
 
 [dev-packages]
 
