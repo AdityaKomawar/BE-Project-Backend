@@ -43,7 +43,7 @@ class ListSingleImage(generics.ListCreateAPIView):
       singleImage = serializer.save()
       serializer = SingleImageSerializer(singleImage)
       res['sentData'] = serializer.data
-      image = request.data['image']
+      image = open(request.data['image'],'r+')
       file_name = "brain.jpg"
       file_name2 = default_storage.save(file_name, image)
       file_url = default_storage.url(file_name2)
