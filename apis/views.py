@@ -45,10 +45,10 @@ class ListSingleImage(generics.ListCreateAPIView):
       res['sentData'] = serializer.data
       image = request.data['image']
       file_name = "brain.jpg"
-      file_name2 = default_storage.save(file_name, open(image, 'r+'))
+      file_name2 = default_storage.save(file_name, image)
       file_url = default_storage.url(file_name2)
       # print(file_url)
-      original = load_img(file_url, target_size=(224,224))
+      original = load_img(open(file_url, 'r+'), target_size=(224,224))
       numpy_image = img_to_array(original)
       image_batch = np.expand_dims(numpy_image,axis=0)
       processed_image = vgg16.preprocess_input(image_batch.copy())
