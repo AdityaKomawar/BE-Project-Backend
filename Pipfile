@@ -8,6 +8,8 @@ django = "==2.2.6"
 djangorestframework = "*"
 django-cors-headers = "*"
 pillow = "*"
+numpy = "*"
+tensorflow-cpu = "*"
 
 [dev-packages]
 

@@ -16,6 +16,21 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+MODELS = os.path.join(BASE_DIR, 'apis/models')
+# MODELS = os.path.join(BASE_DIR, 'apis')
+
+# import numpy as np
+# import tensorflow as tf
+# import tensorflow.keras as keras
+# from tensorflow.keras import backend as k
+# from tensorflow.python.keras.backend import set_session
+# from tensorflow.keras.applications import vgg16
+# from tensorflow.keras.models import load_model
+# loaded_model = 
+
+# def get_session():
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -140,4 +155,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
