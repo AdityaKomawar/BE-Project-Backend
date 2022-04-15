@@ -40,7 +40,10 @@ SECRET_KEY = '2!y@%$wv=u5*+$xbzqg-yc90lv+=pb$0hy1^gv25r)8vpwqq1+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1',
+    'localhost',
+    'adityakomawar.github.io',
+    'whispering-earth-53299.herokuapp.com',]
 
 
 # Application definition
