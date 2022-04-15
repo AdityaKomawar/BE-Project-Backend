@@ -95,11 +95,11 @@
         },
         "google-auth": {
             "hashes": [
-                "sha256:1a8c2c70c070b72fe038e2eb20072e5b4f0fd8ca1875e8fafe7f71b689a8d572",
-                "sha256:4dacb91d8a15b7755fc08688576481bd9c37cfac9842289469cf000d557f8962"
+                "sha256:04e224f241c0566477bb35a8a93be8c635210de743bde454d49393cfb605266d",
+                "sha256:9a88ee548f6fd49467e2e443dfbfe10344e5a270629a137a3a0b3437ec6b02a6"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
-            "version": "==2.6.4"
+            "version": "==2.6.5"
         },
         "google-auth-oauthlib": {
             "hashes": [

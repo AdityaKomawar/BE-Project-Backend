@@ -82,6 +82,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:5500',
     'http://localhost:8000',
+    'https://adityakomawar.github.io/',
 )
 
 ROOT_URLCONF = 'ml_model.urls'
