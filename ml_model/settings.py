@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -34,7 +37,7 @@ MODELS = os.path.join(BASE_DIR, 'apis/models')
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2!y@%$wv=u5*+$xbzqg-yc90lv+=pb$0hy1^gv25r)8vpwqq1+'
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -157,12 +160,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+# MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
 
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN='sl.BFwgN3p4cSuHpd-MQiB0tWOcS7Jm8pB5zXiEXdw2J3LUEOrenHhedxknEqzNSIIVRu0bnWF2l5ygiqfoDtOiNfmhvnvHTWvmRmY_SxZzG-PffMAykqIHt9J3-rC8-OMjsuHGvag'
-DROPBOX_ROOT_PATH = '/media/'
+DEFAULT_FILE_STORAGE = 'backend.custom_azure.AzureMediaStorage'
+STATICFILES_STORAGE = 'backend.custom_azure.AzureStaticStorage'
+
+STATIC_LOCATION = 'static'
+MEDIA_LOCATION = 'media'
+
+AZURE_ACCOUNT_NAME = 'beproject'
+AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
+MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
+
+# DROPBOX_OAUTH2_TOKEN = str(os.getenv('DROPBOX_OAUTH2_TOKEN'))
+# DROPBOX_ROOT_PATH = '/media/'
